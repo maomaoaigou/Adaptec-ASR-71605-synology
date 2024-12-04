@@ -1,4 +1,5 @@
 plugin.exports = class ShencouPlugin {
+    // 插件基本信息
     static ID = "shencou-light-novel";
     static TYPE = plugin.type.BOOK_SOURCE;
     static GROUP = "轻小说";
@@ -6,13 +7,14 @@ plugin.exports = class ShencouPlugin {
     static VERSION = "1.0";
     static VERSION_CODE = 1;
     static BASE_URL = "https://m.shencou.com";
+    static PLUGIN_FILE_URL = "https://raw.githubusercontent.com/your-repo/shencou-plugin/main/dist/shencou.js";  // 添加这行
     static REQUIRE = {};
 
     constructor({request, store, cheerio, nanoid}) {
-        this.request = request;
-        this.store = store;
-        this.cheerio = cheerio;
-        this.nanoid = nanoid;
+        this.request = request;    // HTTP请求工具
+        this.store = store;        // 数据存储工具
+        this.cheerio = cheerio;    // HTML解析工具
+        this.nanoid = nanoid;      // ID生成工具
     }
 
     async search(keyword) {
