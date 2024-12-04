@@ -7,7 +7,7 @@ plugin.exports = class ShencouPlugin {
     static VERSION = "1.0";
     static VERSION_CODE = 1;
     static BASE_URL = "https://m.shencou.com";
-    static PLUGIN_FILE_URL = "https://raw.githubusercontent.com/your-repo/shencou-plugin/main/dist/shencou.js";  // 添加这行
+    static PLUGIN_FILE_URL = "https://raw.githubusercontent.com/maomaoaigou/Adaptec-ASR-71605-synology/refs/heads/main/A.js";  // 添加这行
     static REQUIRE = {};
 
     constructor({request, store, cheerio, nanoid}) {
